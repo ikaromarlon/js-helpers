@@ -1,0 +1,14 @@
+{
+  "name": "js-helpers",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:ikaromarlon/js-helpers.git",
+  "author": "Icaro Silva <ikaromarlon@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "eslint": "^7.2.0",
+    "eslint-config-airbnb-base": "^14.2.0",
+    "eslint-plugin-import": "^2.21.2"
+  },
+  "dependencies": {}
+}
