@@ -1,4 +1,1 @@
-module.exports = (value) => {
-  if ([NaN, null, undefined, false, true, ''].includes(value) || typeof value === 'object') return value;
-  return Number.isNaN(Number(value)) ? parseFloat(value.toString().replace(/[^0-9,-.]+/g, '').replace('.', '').replace(',', '.')) : value;
-};
+module.exports = (value) => (Number.isNaN(Number(value)) ? parseFloat(value.toString().replace(/[^0-9,-.]+/g, '').replace(/\./g, '').replace(/,/g, '.')) : value);
